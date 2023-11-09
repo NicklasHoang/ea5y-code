@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PIMP</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="left-container">
+        <div class="top-container">
+            <a href="main.html">
+                <button class="PI-button"></button>
+            </a>
+        </div>
+        <div class="middle-container">
+            <a>
+                <button class="user-button"></button>
+            </a>
+        </div>
+        <div class="bottom-container">
+            <button class="settings-button">settings</button>
+        </div>
+    </div>
+       
+    <div class="right-container">
+        <div class="upper-right">
+            <a class="square-button" href="landscape.html">
+            </a>
+            <div class="search-bar">
+                <input type="text" class="search-input" id="searchInput" onkeyup="searchTable()" placeholder="search">
+                <button class="search-button" onclick="searchTable()">search</button>
+            </div>
+        </div>
+        <div class="table-container">
+            <table id="processes">
+                <tr>
+                    <th></th>
+                    <th>
+                        Process-Name
+                        <button onclick="sortTableN()">v</button>
+                    </th>
+                    <th>
+                        Process-Group
+                        <button onclick="sortTableG()">v</button>
+                    </th>
+                    <th>
+                        ID
+                        <button onclick="sortTableID()">v</button>
+                    </th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Requirement to Design</td>
+                    <td>Ideenfindung</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Design to Release</td>
+                    <td>Ideenfindung</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Market to Order</td>
+                    <td>Auftrag</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Order to Cash</td>
+                    <td>Auftrag</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Procure to Pay</td>
+                    <td>Auftrag</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Plan to Deliver</td>
+                    <td>Auftrag</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Contact to Cash</td>
+                    <td>Auftrag</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Service to Cash</td>
+                    <td>Ausführung</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Record to Report</td>
+                    <td>Dokumentation</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Issue to Resolution</td>
+                    <td>Dokumentation</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Risk & Compliance</td>
+                    <td>Planung</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Hours to Account</td>
+                    <td>Planung</td>
+                    <td>12</td>
+                </tr>
+            </table>
+
+            <script>
+                function sortTableN() {
+                    var table, rows, switching, i, x, y, shouldSwitch;
+                    table = document.getElementById("processes");
+                    switching = true;
+        
+                    while (switching) {
+                        switching = false;
+                        rows = table.rows;
+        
+                        for (i = 1; i < (rows.length - 1); i++) {
+                            shouldSwitch = false;
+                            x = rows[i].getElementsByTagName("td")[1]; // Spalte "Process-Name"
+                            y = rows[i + 1].getElementsByTagName("td")[1];
+        
+                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+        
+                        if (shouldSwitch) {
+                            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                            switching = true;
+                        }
+                    }
+                }
+
+                function sortTableG() {
+                    var table, rows, switching, i, x, y, shouldSwitch;
+                    table = document.getElementById("processes");
+                    switching = true;
+        
+                    while (switching) {
+                        switching = false;
+                        rows = table.rows;
+        
+                        for (i = 1; i < (rows.length - 1); i++) {
+                            shouldSwitch = false;
+                            x = rows[i].getElementsByTagName("td")[2]; // Spalte "Process-Name"
+                            y = rows[i + 1].getElementsByTagName("td")[2];
+        
+                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+        
+                        if (shouldSwitch) {
+                            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                            switching = true;
+                        }
+                    }
+                }
+
+                function sortTableID() {
+                    var table, rows, switching, i, x, y, shouldSwitch;
+                    table = document.getElementById("processes");
+                    switching = true;
+
+                    while (switching) {
+                        switching = false;
+                        rows = table.rows;
+
+                        for (i = 1; i < (rows.length - 1); i++) {
+                            shouldSwitch = false;
+                            x = parseInt(rows[i].getElementsByTagName("td")[3].textContent); // Konvertiere ID in Integer
+                            y = parseInt(rows[i + 1].getElementsByTagName("td")[3].textContent);
+
+                            if (x > y) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+
+                        if (shouldSwitch) {
+                            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                            switching = true;
+                        }
+                    }
+                }
+
+
+                function searchTable() {
+                    var input, filter, table, tr, td, i, txtValue;
+                    input = document.getElementById("searchInput");
+                    filter = input.value.toUpperCase();
+                    table = document.getElementById("processes");
+                    tr = table.getElementsByTagName("tr");
+
+                    for (i = 1; i < tr.length; i++) {
+                        td = tr[i].getElementsByTagName("td")[1]; // Spalte "Process-Name"
+                        if (td) {
+                            txtValue = td.textContent || td.innerText;
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                tr[i].style.display = "";
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+                    }
+        }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
