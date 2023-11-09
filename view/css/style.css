@@ -19,7 +19,7 @@
 .square-button {
     width: 100px;
     height: 100px;
-    background: url('map.png') center/cover; /* Hintergrundbild */
+    background: url('../pictures/map.png') center/cover; /* Hintergrundbild */
     border: 2px solid #000; /* 2px breiter schwarzer Rand */
     cursor: pointer;
     margin-right: 20px;
@@ -28,14 +28,14 @@
 .pic {
     width: 724px;
     height: 365px;
-    background: url('Prozesse.png') center/cover;
+    background: url('../pictures/Prozesse.png') center/cover;
     border: 2px solid #000;
 }
 
 .PI-button {
     width: 100px;
     height: 100px;
-    background: url('pi.png') center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
+    background: url('../pictures/pi.png') center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
     border: 2px solid #000; /* 2px breiter schwarzer Rand */
     cursor: pointer;
     margin-right: 20px;
@@ -117,7 +117,7 @@ th, td {
 }
 
 .rund {
-    background: url('user.png') center/cover;
+    background: url('../pictures/user.png') center/cover;
 	border-radius: 100px;
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
@@ -126,7 +126,7 @@ th, td {
 .user-button {
     width: 100px;
     height: 100px;
-    background: url('user.png') center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
+    background: url('../pictures/user.png') center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
     border: 2px solid #000; /* 2px breiter schwarzer Rand */
     cursor: pointer;
     margin-right: 20px;
