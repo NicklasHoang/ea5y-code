@@ -1,0 +1,33 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.accessibilitySupport": "on",
+    "editor.stickyScroll.enabled": true,
+    "editor.formatOnSave": true,
+    "audioCues.diffLineDeleted": "off",
+    "audioCues.diffLineInserted": "off",
+    "audioCues.diffLineModified": "off",
+    "audioCues.lineHasBreakpoint": "off",
+    "audioCues.lineHasError": "off",
+    "audioCues.lineHasFoldedArea": "off",
+    "audioCues.lineHasInlineSuggestion": "off",
+    "audioCues.noInlayHints": "off",
+    "audioCues.notebookCellCompleted": "off",
+    "audioCues.notebookCellFailed": "off",
+    "audioCues.onDebugBreak": "off",
+    "audioCues.taskCompleted": "off",
+    "audioCues.taskFailed": "off",
+    "audioCues.terminalCommandFailed": "off",
+    "audioCues.terminalQuickFix": "off",
+    "audioCues.volume": 0,
+    "gitlens.codeLens.enabled": false,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "eslint.format.enable": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.tabWidth": 4,
+    "testExplorer.useNativeTesting": true,
+    "versionlens.suggestions.showOnStartup": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

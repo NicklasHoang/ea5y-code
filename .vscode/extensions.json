@@ -1,0 +1,28 @@
+{
+    "recommendations": [
+        "kisstkondoros.vscode-codemetrics",
+        "pranaygp.vscode-css-peek",
+        "dbaeumer.vscode-eslint",
+        // "ms-ceintl.vscode-language-pack-de",
+        "donjayamanne.githistory",
+        "felipecaputo.git-project-manager",
+        "balazs4.gitlab-pipeline-monitor",
+        "gitlab.gitlab-workflow",
+        "eamodio.gitlens",
+        "ecmel.vscode-html-css",
+        "wix.vscode-import-cost",
+        "visualstudioexptteam.vscodei",
+        "xabikos.javascriptsnippets",
+        "yandeu.five-server",
+        "hbenl.vscode-mocha-test-adapter",
+        "adamcowley.neo4j-vscode",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "sonarsource.sonarlint-vscode",
+        "tabnine.tabnine-vscode",
+        "ms-vscode.test-adapter-converter",
+        "hbenl.vscode-test-explorer",
+        "pflannery.vscode-versionlens"
+    ]
+}
