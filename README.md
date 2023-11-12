@@ -1,6 +1,11 @@
 # EA5Y - Code
 
+Beim ersten mal klonen:
+- Noje.js installieren
+- Bestehende Extensions (im Workspace) deaktivieren
 
+Nach jedem klonen:
+- npm install ausführen
 
 ## Getting started
 
