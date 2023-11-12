@@ -1,0 +1,10 @@
+stages:
+  - test
+
+variables:
+  IMAGE_NAME: registry.gitlab.com/ea5y/ea5y-code:latest
+
+unit-test-job:
+  stage: test
+  script:
+    - echo "Pulling Docker Image..."
