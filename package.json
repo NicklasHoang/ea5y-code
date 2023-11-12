@@ -1,7 +1,10 @@
 {
   "devDependencies": {
+    "chromedriver": "119.0.1",
     "eslint": "8.53.0",
-    "prettier": "3.0.3"
+    "mocha": "10.2.0",
+    "prettier": "3.0.3",
+    "selenium-webdriver": "4.15.0"
   },
   "dependencies": {
     "bootstrap": "5.3.2"
