@@ -1,12 +1,13 @@
 # EA5Y - Code
 
 Beim ersten mal klonen:
-- Noje.js installieren
-- Bestehende Extensions (im Workspace) deaktivieren
+- Noje.js auf dem Rechner installieren
+- Bestehende VSCode Extensions (im Workspace) deaktivieren
+- (vielleicht JMeter installieren)
 
 Nach jedem klonen:
-- "npm install" ausführen
-- "npm fund" ausführen
+- "npm install" im Terminal ausführen
+- "npm fund" im Terminal ausführen
 
 ## Getting started
 
