@@ -5,7 +5,8 @@ Beim ersten mal klonen:
 - Bestehende Extensions (im Workspace) deaktivieren
 
 Nach jedem klonen:
-- npm install ausführen
+- "npm install" ausführen
+- "npm fund" ausführen
 
 ## Getting started
 
