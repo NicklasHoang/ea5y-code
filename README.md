@@ -1,7 +1,7 @@
 # EA5Y - Code
 
 Beim ersten mal klonen:
-- Noje.js auf dem Rechner installieren
+- Node.js auf dem Rechner installieren
 - Bestehende VSCode Extensions (im Workspace) deaktivieren
 - (vielleicht JMeter installieren)
 
