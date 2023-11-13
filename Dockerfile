@@ -31,6 +31,29 @@
 
 # Image mit Node.js ohne JMeter
 
+# FROM node:20.9.0-alpine AS builder
+
+# WORKDIR /app
+
+# COPY package*.json ./
+
+# RUN npm install
+
+# FROM node:20.9.0-alpine
+
+# WORKDIR /app
+
+# COPY --from=builder /app/node_modules ./node_modules
+# COPY --from=builder /app/package*.json ./
+
+# COPY tests /app/tests
+
+# CMD ["npm", "test"]
+
+
+
+# Image mit Node.js ohne JMeter und Selenium
+
 FROM node:20.9.0-alpine AS builder
 
 WORKDIR /app
@@ -41,12 +64,24 @@ RUN npm install
 
 FROM node:20.9.0-alpine
 
-WORKDIR /app
+RUN apk add --no-cache \
+      chromium \
+      nss \
+      freetype \
+      freetype-dev \
+      harfbuzz \
+      ca-certificates \
+      ttf-freefont
 
 COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/package*.json /app/
 
 COPY tests /app/tests
+
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
+    PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+
+WORKDIR /app
 
 CMD ["npm", "test"]
 
