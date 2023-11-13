@@ -11,7 +11,6 @@
     
     min-width: 100vw;
     height: 100vh; /* Die Container-Höhe entspricht der Höhe des Viewports */
-    background-color: blue;
 
     overflow: hidden;
 }
@@ -27,6 +26,7 @@
     transition: all 0.35s ease-in-out;
     margin-left: 10px;
     background-color: rgb(223, 13, 13);
+    z-index: 1;
 }
 
 #btn-right {
@@ -39,6 +39,7 @@
     transition: all 0.35s ease-in-out;
 
     background-color: rgb(233, 15, 15);
+    z-index: 1;
 }
 
 #btn-down {
@@ -51,6 +52,7 @@
     transition: all 0.35s ease-in-out;
 
     background-color: rgb(240, 21, 21);
+    z-index: 1;
 }
 
 

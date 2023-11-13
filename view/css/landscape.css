@@ -1,38 +1,41 @@
-.left-container {
-    width: 15%;
-    height: 100vh;
-    background: #004f9e;
-    float: left;
+/****************************
+****** Zoom in and out ******
+****************************/
+
+#btn-zoom-in {
+    grid-column: 49;
+    grid-row: 1;
+
+    background-color: grey;
+    z-index: 1;
 }
 
-.middle-container {
-    width: 70%;
-    height: 100vh;
-    float: left;
-}
+#btn-zoom-out {
+    grid-column: 51;
+    grid-row: 1;
 
-.right-container {
-    width: 15%;
-    height: 100vh;
-    float: left;
+    background-color: grey;
+    z-index: 1;
 }
+/****************************
+****** Bild div        ******
+****************************/
+#Bild{
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    cursor: grab; 
 
-.upper-container {
+}
+#zoomedImage {
+    position: absolute;
+
     width: 100%;
-    height: 65vh;
-}
+    height: 100%;
+    transition: transform 0.3s ease; /* Animierter Übergang für den Zoom-Effekt */
+    z-index: -1;
 
-.lower-container {
-    width: 100%;
-    height: 35vh;
-}
-
-.time-container {
-    width: 100%;
-    height: 10vh;
-}
-
-.time-line-container {
-    width: 100%;
-    height: 25vh;
+    overflow: hidden;
 }
