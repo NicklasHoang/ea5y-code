@@ -1,10 +1,16 @@
+image: registry.gitlab.com/ea5y/ea5y-code:latest
+
 stages:
   - test
-
-variables:
-  IMAGE_NAME: registry.gitlab.com/ea5y/ea5y-code:latest
 
 unit-test-job:
   stage: test
   script:
-    - echo "Pulling Docker Image..."
+    - echo "Hello World :)"
+    - echo "Installed dependencies:"
+    - npm install
+    - npm fund
+    - npm list
+    - node -v
+    - chromium-browser --version
+    - npm test
