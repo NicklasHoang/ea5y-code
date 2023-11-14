@@ -19,7 +19,7 @@
 .square-button {
     width: 100px;
     height: 100px;
-    background: url("map.png") center/cover; /* Hintergrundbild */
+    background: url('../pictures/map.png') center/cover; /* Hintergrundbild */
     border: 2px solid #000; /* 2px breiter schwarzer Rand */
     cursor: pointer;
     margin-right: 20px;
@@ -28,14 +28,14 @@
 .pic {
     width: 724px;
     height: 365px;
-    background: url("Prozesse.png") center/cover;
+    background: url('../pictures/Prozesse.png') center/cover;
     border: 2px solid #000;
 }
 
 .PI-button {
     width: 100px;
     height: 100px;
-    background: url("pi.png") center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
+    background: url('../pictures/pi.png') center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
     border: 2px solid #000; /* 2px breiter schwarzer Rand */
     cursor: pointer;
     margin-right: 20px;
@@ -54,7 +54,7 @@
 }
 
 .search-button {
-    background: #0051a0; /* Hintergrundfarbe des Suchen-Buttons */
+    background: #0051A0; /* Hintergrundfarbe des Suchen-Buttons */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -68,20 +68,20 @@
     overflow: auto;
 }
 
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
     border: 1px solid #000; /* Sichtbare Tabellengrenzen */
     padding: 8px;
     text-align: left;
 }
 
 .left-container {
-    background: #0051a0;
+    background: #0051A0;
     height: 100vh;
     width: 13%;
     float: left;
@@ -93,7 +93,7 @@ td {
 
 .top-container {
     height: 33.33vh;
-    padding: 20px;
+    padding: 20px; 
 }
 
 .middle-container {
@@ -117,16 +117,16 @@ td {
 }
 
 .rund {
-    background: url("user.png") center/cover;
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
+    background: url('../pictures/user.png') center/cover;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
 }
 
 .user-button {
     width: 100px;
     height: 100px;
-    background: url("user.png") center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
+    background: url('../pictures/user.png') center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
     border: 2px solid #000; /* 2px breiter schwarzer Rand */
     cursor: pointer;
     margin-right: 20px;
@@ -156,17 +156,17 @@ mode-button-approve {
 .time-container {
     height: 30vh;
     padding: 20px;
-    background-color: white;
+    background-color:white;
 }
 
 add-button {
-    background-color: #0051a0;
+    background-color: #0051A0;
     cursor: pointer;
     color: white;
 }
 
 delete-button {
-    background-color: #0051a0;
+    background-color: #0051A0;
     cursor: pointer;
     color: white;
 }
@@ -175,10 +175,10 @@ delete-button {
     position: relative;
     display: inline-block;
     cursor: pointer;
-}
-
-/* The actual popup (appears on top) */
-.popup .popuptext {
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
     visibility: hidden;
     width: 160px;
     background-color: #555;
@@ -191,10 +191,10 @@ delete-button {
     bottom: 125%;
     left: 50%;
     margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -203,30 +203,22 @@ delete-button {
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

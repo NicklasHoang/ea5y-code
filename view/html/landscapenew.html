@@ -1,17 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Pimp</title>
-        <link rel="stylesheet" type="text/css" href="landscape.css" />
-    </head>
-    <body>
-        <div class="left-container"></div>
-        <div class="middle-container">
-            <div class="upper-container"></div>
-            <div class="lower-container">
-                <div class="time-container"></div>
-            </div>
+<head>
+    <title>Pimp</title>
+    <link rel="stylesheet" type="text/css" href="../css/landscape.css">
+</head>
+<body>
+    <div class="map-container">
+        <div class="pic"></div>
+        <div class="popup" onclick="myFunction()">add
+            <span class="popuptext" id="myPopup">
+                <form>
+                    <label>process</label>
+                    <input type="text"><br><br>
+                    <label>ID</label>
+                    <input type="text"><br><br>
+                    <label>process group</label>
+                    <input type="text"><br><br>
+                    <label>following ID</label>
+                    <input type="text"><br><br>
+                    <label>preceding ID</label>
+                    <input type="text"><br><br>
+                    <button>submit</button>
+                  </form>
+            </span>
         </div>
-        <div class="right-container"></div>
-    </body>
+        <script>
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+        </script>
+    </div>
+</body>
 </html>
