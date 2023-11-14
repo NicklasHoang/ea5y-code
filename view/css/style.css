@@ -1,3 +1,7 @@
+
+/**************************
+******Right Side     ******
+**************************/
 .right-container {
     width: 87%;
     height: 100vh;
@@ -6,73 +10,73 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+
+    overflow: hidden;
 }
 
 .upper-right {
     width: 100%;
-    height: 20%;
+    height: 35%;
     background: #f0f0f0; /* Hintergrundfarbe des oberen Containers */
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    
+    flex-direction: row;
+
 }
 
 .square-button {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 80%;
     background: url('../pictures/map.png') center/cover; /* Hintergrundbild */
     border: 2px solid #000; /* 2px breiter schwarzer Rand */
     cursor: pointer;
-    margin-right: 20px;
-}
-
-.pic {
-    width: 724px;
-    height: 365px;
-    background: url('../pictures/Prozesse.png') center/cover;
-    border: 2px solid #000;
-}
-
-.PI-button {
-    width: 100px;
-    height: 100px;
-    background: url('../pictures/pi.png') center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
-    border: 2px solid #000; /* 2px breiter schwarzer Rand */
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
 }
 
 .search-input {
-    width: 300px;
-    padding: 10px;
+    width: 400px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.search-button {
-    background: #0051A0; /* Hintergrundfarbe des Suchen-Buttons */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+#process-map {
+
+    width: 18vw;
+    height: 30vh;
+
+    padding: 1%;
+    display: flex;
+    justify-items: center;
+
+    border: 2px solid black;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin: 1%;
+
+}
+
+/**************************
+******Table          ******
+**************************/
+#lower-area {
+    width: 83vw;
+    height: 63vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    margin-left: 1%;
+    border: 3px solid black;
 }
 
 .table-container {
-    height: 45%; /* Anpassung der Höhe auf 45% */
-    margin-top: 5%; /* Hinzufügen einer oberen Marge von 5% */
+    width: 100%;
+    height: 100%;
+
     overflow: auto;
 }
 
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
 
 th, td {
     border: 1px solid #000; /* Sichtbare Tabellengrenzen */
@@ -80,6 +84,37 @@ th, td {
     text-align: left;
 }
 
+#div-layer-left {
+    width: 7%;
+    height: 65vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    background-color: #0051A0;
+
+    border: 3px solid black;
+    padding: 1.5%;
+}
+
+#layer {
+    min-width: 5%;
+    padding: 3%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+
+    border: 2px solid black;
+    background-color: lightgrey;
+}
+
+
+/**************************
+******Left Side      ******
+**************************/
 .left-container {
     background: #0051A0;
     height: 100vh;
@@ -88,50 +123,63 @@ th, td {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0;
+
+}
+
+.PI-button {
+    width: 100%;
+    height: 100%;
+    background: url('../pictures/pi.png') center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
+    border: 2px solid #000; /* 2px breiter schwarzer Rand */
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 .top-container {
-    height: 33.33vh;
-    padding: 20px; 
+    width: 100%;
+    height: 20vh;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 1% solid #000;
+
+    margin-bottom: 10%;
 }
 
-.middle-container {
-    height: 33.33vh;
-    padding: 20px;
-}
 
-.bottom-container {
-    height: 33.33vh;
-    padding: 20px;
-}
+
 
 .settings-button {
     margin-top: auto; /* Verschiebt den Button zum unteren Rand des Containers */
+    margin-bottom: 10%;
+    
     background: white; /* Hintergrundfarbe des Buttons */
     color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+
+    justify-self: flex-end;
 }
 
-.rund {
-    background: url('../pictures/user.png') center/cover;
-	border-radius: 100px;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
+#user-Button {
+    width: 80%;
+    height: 20%;
+    margin-bottom: 10%;
+    overflow: hidden;
 }
 
-.user-button {
-    width: 100px;
-    height: 100px;
-    background: url('../pictures/user.png') center/cover; /* Hintergrundbild und background-size auf 'contain' festlegen */
-    border: 2px solid #000; /* 2px breiter schwarzer Rand */
-    cursor: pointer;
-    margin-right: 20px;
+#img-user {
+    width: 100%;
+    height: auto;
 }
 
+/**************************
+******Keine Ahnung   ******
+**************************/
 mode-button-sim {
     background-color: white;
     cursor: pointer;
@@ -146,79 +194,4 @@ mode-button-approve {
     background-color: white;
     cursor: pointer;
 }
-
-.map-container {
-    height: 70vh;
-    padding: 20px;
-    background-color: white;
-}
-
-.time-container {
-    height: 30vh;
-    padding: 20px;
-    background-color:white;
-}
-
-add-button {
-    background-color: #0051A0;
-    cursor: pointer;
-    color: white;
-}
-
-delete-button {
-    background-color: #0051A0;
-    cursor: pointer;
-    color: white;
-}
-
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
   
-  /* The actual popup (appears on top) */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
