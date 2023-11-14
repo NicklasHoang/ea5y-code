@@ -27,6 +27,7 @@
     "prettier.tabWidth": 4,
     "testExplorer.useNativeTesting": true,
     "versionlens.suggestions.showOnStartup": true,
+    "mochaExplorer.files": "tests/**/*.js",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
