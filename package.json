@@ -1,0 +1,21 @@
+{
+    "devDependencies": {
+        "eslint": "8.53.0",
+        "mocha": "10.2.0",
+        "prettier": "3.1.0",
+        "puppeteer": "21.5.1"
+    },
+    "dependencies": {
+        "bootstrap": "5.3.2"
+    },
+    "mochaExplorer": {
+        "files": "tests/**/*.js",
+        "cwd": ".",
+        "env": {
+            "NODE_ENV": "test"
+        }
+    },
+    "scripts": {
+        "test": "mocha tests/"
+    }
+}

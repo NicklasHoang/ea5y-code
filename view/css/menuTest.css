@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+.wrapper {
+    display: grid;
+
+    padding-bottom: 0%;
+    grid-template-columns: repeat(100, 1vw);
+    grid-template-rows: repeat(100, 1vh);
+    
+    min-width: 100vw;
+    height: 100vh; /* Die Container-Höhe entspricht der Höhe des Viewports */
+
+    overflow: hidden;
+}
+/************************************
+****    Button CSS          *********
+************************************/
+#btn-left {
+    grid-column: 1;
+    grid-row: 48;
+
+    min-height: 50px;
+
+    transition: all 0.35s ease-in-out;
+    margin-left: 10px;
+    background-color: rgb(223, 13, 13);
+    z-index: 1;
+}
+
+#btn-right {
+    
+    grid-column: 99;
+    grid-row: 48;
+
+    min-height: 50px;
+
+    transition: all 0.35s ease-in-out;
+
+    background-color: rgb(233, 15, 15);
+    z-index: 1;
+}
+
+#btn-down {
+    
+    grid-column: 48;
+    grid-row: 98;
+
+    min-width: 50px;
+
+    transition: all 0.35s ease-in-out;
+
+    background-color: rgb(240, 21, 21);
+    z-index: 1;
+}
+
+
+/*********************************
+******   Layout skeleton    ******
+*********************************/
+
+#sidebar-left {
+    border-color: black;
+    border: solid;
+
+    grid-column: 4;
+    grid-row: 1;
+
+    min-width: 16vw;
+    min-height: 100vh;
+
+    transform: translateX(-20vw);
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+    background-color: aqua;
+    z-index: 1111;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar-right {
+    border-color: black;
+    border: solid;
+
+    grid-column:  82;
+    grid-row:  1;
+
+    min-width: 16.5vw;
+    min-height: 100vh;
+
+    transform: translateX(20vw);
+
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+    z-index: 1111;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10%;
+}
+
+#sidebar-down {
+    border-color: green;
+    border: solid;
+
+    grid-column:  1;
+    grid-row:  66;
+
+    width: 100vw;
+    height: 16vw;
+
+    transform: translateY(20vw);
+    transition: all 0.35s ease-in-out;
+
+    box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+    z-index: 1110;
+    background-color: aqua;
+}
+
+/*****************************
+****** Sidebar collapse ******
+*****************************/
+
+#sidebar-left.collapsed {
+    transform: translateX(0%);
+}
+
+#sidebar-right.collapsed {
+    transform: translateX(0%);
+}
+
+#sidebar-down.collapsed {
+    transform: translateY(0%);
+    
+}
+
+#sidebar-down.collapsed-right{
+    padding-right: 20vw;
+    
+}
+
+#sidebar-down.collapsed-left{
+    padding-left: 20vw;
+    
+}
+
+/*****************************
+****** Sidebar Left     ******
+*****************************/
+#pic-div {
+    width: 80%;
+    height: 20%;
+    border: 5px solid black;
+    background-image: url(../pictures/pi.png);
+    background-position: center;
+    background-size: contain;
+    margin: 10%;
+}
+
+h3 {
+    text-align: center;
+}
+
+#BA-Modes {
+    border: 2px solid black;
+    background-color: blue;
+    margin: 10%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+#BA-Modes-btn{
+    width: auto;
+    padding: 1%;
+    margin-top: 3%;
+    background-color: rgb(175, 175, 175);
+}
+
+#LY-div {
+    width: 50%;
+    border: 2px solid black;
+    background-color: blue;
+    margin: 10%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+
+}
+
+#LY-btn {
+    margin: 2.5%;
+    padding: 1%;
+    background-color: rgb(175, 175, 175);
+
+}
+
+/*****************************
+****** Sidebar Right    ******
+*****************************/
+#tools{
+    margin-top: 20%;
+
+    border-color: 1% solid black;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+}
+
+#tool-btn {
+    width: 80%;
+
+    margin: 2.5%;
+    padding: 1%;
+    background-color: rgb(175, 175, 175);
+}
+#card-div {
+    width: 90%;
+}   
+#v-pills-watch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: blue;
+    padding: 5%;
+}
+/*****************************
+****** Sidebar Down     ******
+*****************************/
