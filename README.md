@@ -1,6 +1,13 @@
 # EA5Y - Code
 
+Beim ersten mal klonen:
+- Node.js auf dem Rechner installieren
+- Bestehende VSCode Extensions (im Workspace) deaktivieren
+- (vielleicht JMeter installieren)
 
+Nach jedem klonen:
+- "npm install" im Terminal ausführen
+- "npm fund" im Terminal ausführen
 
 ## Getting started
 
