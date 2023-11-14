@@ -74,8 +74,6 @@
     height: 100%;
 
     overflow: auto;
-
-    background-color: blue;
 }
 
 
@@ -94,9 +92,9 @@ th, td {
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    background-color: blue;
+    background-color: #0051A0;
 
-    border: 3% solid black;
+    border: 3px solid black;
     padding: 1.5%;
 }
 
