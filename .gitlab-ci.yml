@@ -5,6 +5,8 @@ stages:
 
 unit-test-job:
   stage: test
+  tags:
+    - self-hosted
   script:
     - echo "Hello World :)"
     - echo "Installed dependencies:"
