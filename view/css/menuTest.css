@@ -121,6 +121,9 @@
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1110;
     background-color: aqua;
+
+    padding-right: 4vw;
+    padding-left: 4vw;
 }
 
 /*****************************
@@ -222,21 +225,65 @@ h3 {
 #tool-btn {
     width: 80%;
 
-    margin: 2.5%;
+    margin-left: 10%;
+    margin-bottom: 3%;
     padding: 1%;
     background-color: rgb(175, 175, 175);
 }
 #card-div {
     width: 90%;
 }   
-#v-pills-watch{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+#v-pills-tabContent{
     background-color: blue;
     padding: 5%;
 }
 /*****************************
-****** Sidebar Down     ******
+****** Button divs      ******
 *****************************/
+
+#btn-div-down {
+    grid-column: 1;
+    grid-row: 97;
+
+    min-width: 100vw;
+    min-height: 4vh;
+
+    z-index: 1111;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-div-left {
+    grid-column: 1;
+    grid-row: 1;
+    
+    min-width: 3vw;
+    min-height: 100vh;
+    
+    z-index: 1111;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+}
+
+#btn-div-right {
+    grid-column: 98;
+    grid-row: 1;
+
+    min-width: 3vw;
+    min-height: 100vh;
+
+    z-index: 1111;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+}

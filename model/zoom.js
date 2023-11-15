@@ -10,7 +10,6 @@ var mouseX = 0;
 var mouseY = 0;
 var isDragging = false;
 
-document.getElementById('Bild').addEventListener('mousedown', startDrag);
 document.addEventListener('mouseup', stopDrag);
 document.addEventListener('mousemove', drag);
 
