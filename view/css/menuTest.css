@@ -74,7 +74,7 @@
     transform: translateX(-20vw);
     transition: all 0.35s ease-in-out;
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
-    background-color: aqua;
+    background-color: white;
     z-index: 1111;
 
     display: flex;
@@ -97,7 +97,7 @@
     transition: all 0.35s ease-in-out;
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1111;
-    background-color: aqua;
+    background-color: white;
 
     display: flex;
     flex-direction: column;
@@ -107,13 +107,15 @@
 }
 
 #sidebar-down {
+    --basis-breite: 100vw;
+    --basis-abzug: 4vw;
     border-color: green;
     border: solid;
 
     grid-column:  1;
     grid-row:  66;
 
-    width: 100vw;
+    width: var(--basis-breite);
     height: 16vw;
 
     transform: translateY(20vw);
@@ -121,10 +123,11 @@
 
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1110;
-    background-color: aqua;
+    background-color: white;
 
     padding-right: 4vw;
     padding-left: 4vw;
+
 }
 
 /*****************************
@@ -173,7 +176,7 @@ h3 {
 
 #BA-Modes {
     border: 2px solid black;
-    background-color: blue;
+    background-color: #0051A0;
     margin: 10%;
 
     display: flex;
@@ -191,7 +194,7 @@ h3 {
 #LY-div {
     width: 50%;
     border: 2px solid black;
-    background-color: blue;
+    background-color: #0051A0;
     margin: 10%;
 
     display: flex;
@@ -214,7 +217,6 @@ h3 {
     margin-top: 20%;
 
     border-color: 1% solid black;
-    background-color: blue;
 
     display: flex;
     flex-direction: column;
@@ -236,11 +238,14 @@ h3 {
     width: 90%;
 }   
 #v-pills-tabContent{
-    background-color: blue;
+    background-color: #0051A0;
     border-radius: 10px;
     max-height: 50%;
 }
 
+#Search-btn {
+    background-color: #0051A0;
+}
 /*****************************
 ****** Button divs      ******
 *****************************/
@@ -254,6 +259,7 @@ h3 {
 
     z-index: 1111;
 
+    background-color: #0051A0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,8 +273,7 @@ h3 {
     min-width: 3vw;
     min-height: 100vh;
     
-    z-index: 1111;
-    background-color: white;
+    z-index: 1120;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,7 +289,6 @@ h3 {
     min-height: 100vh;
 
     z-index: 1111;
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;

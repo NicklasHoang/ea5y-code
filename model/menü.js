@@ -27,14 +27,16 @@ try {
 
     toggler = document.getElementById("sidebar-right");
     toggler.addEventListener("mouseleave",toggleRechteSeite);
+
+    toggler = document.getElementById("btn-div-right");
+    toggler.addEventListener('mouseover', toggleRechteSeite);
   }
   catch(err) {
     console.log("No 'Sidebar-right' Found")
   }
 
 
-toggler = document.getElementById("btn-div-right");
-toggler.addEventListener('mouseover', toggleRechteSeite);
+
 //Untere Seite
 down_side_click = false;
 down_side_out = false;

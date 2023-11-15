@@ -11,12 +11,12 @@
     min-width: 50vw;
     min-height: 100vh;
 
-    transform: translateX(70vw);
+    transform: translateX(0%);
     transition: all 0.35s ease-in-out;
 
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1111;
-    background-color: aqua;
+    background-color: white;
 
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 #sidebar-right-meta.collapsed {
-    transform: translateX(0%);
+    transform: translateX(70vw);
 }
 
 #sidebar-down.collapsed-right-meta{
@@ -42,7 +42,6 @@
     height: 40%;
     margin-top: 5%;
     
-    border: 2px solid rgba(0, 0, 0, 0);
     overflow-y: scroll;
 } 
 
@@ -53,4 +52,8 @@
 
 th {
     width: 50%;
+}
+
+#Search-btn {
+    background-color: #0051A0;
 }
