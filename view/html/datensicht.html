@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Pimp</title>
+    <link rel="stylesheet" type="text/css" href="../css/landscape.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/menuTest.css">
+    <link rel="stylesheet" href="../css/datensicht.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div id="Bild">
+            <img id="zoomedImage" src="../pictures/Prozesse.png" alt="Beschreibung des Bildes">
+        </div>
+
+        <button id="btn-left" class="btn" type="button"></button>
+        <button id="btn-right" class="btn" type="button" ></button>
+        <button id="btn-down" class="btn" type="button" ></button>
+
+        <aside id="sidebar-left">
+            
+            <div id="pic-div"></div>
+            <nav id="BA-Modes">
+                <div class="nav flex-column nav-pills me-3" id="nav-tool-tab" role="tablist" aria-orientation="vertical">
+                    <h3>Mode:</h3>
+                    <a class="nav-link active" id="v-pills-watch-tab" data-bs-toggle="pill" data-bs-target="#v-pills-watch" type="button" role="tab" aria-controls="v-pills-watch" aria-selected="false">Watch</a>
+                    <a class="nav-link" id="v-pills-sim-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sim" type="button" role="tab" aria-controls="v-pills-sim" aria-selected="false">Simulation</a>
+                    <a class="nav-link" id="v-pills-edit-tab" data-bs-toggle="pill" data-bs-target="#v-pills-edit" type="button" role="tab" aria-controls="v-pills-edit" aria-selected="false">Editor</a>
+                    <a class="nav-link" id="v-pills-app-tab" data-bs-toggle="pill" data-bs-target="#v-pills-app" type="button" role="tab" aria-controls="v-pills-app" aria-selected="false">Approver</a>
+                </div>
+            </nav>
+            <nav id="LY-div">
+                <div class="nav flex-column nav-pills me-3" id="nav-layer-tab" role="tablist" aria-orientation="vertical">
+                    <h3>Layer:</h3>
+                    <a class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">1</a>
+                    <a class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">2</a>
+                    <a class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">3</a>
+                </div>
+            </nav>
+        </aside>
+        <aside id="sidebar-right-meta">
+            <div class="input-group mb-3" id="searchbar">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon1">S</button>
+                <input type="text" class="form-control" placeholder="Seach" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+            <div class="card" id="card-div">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ID</td>
+                            <td>M2O</td>
+                        </tr>
+                        <tr>
+                            <td>Process-Group</td>
+                            <td>Production</td>
+                        </tr>
+                        <tr>
+                            <td>Estimated TIme:</td>
+                            <td>2w</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card" id="card-div">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                          <th scope="col">Associated Pracesses</th>
+                          <th scope="col">Is a part of</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Mainprocess 1</td>
+                          <td>Produktion</td>
+                        </tr>
+                        <tr>
+                          <td>Mainprocess 2</td>
+                          <td>Verkauf</td>
+                        </tr>
+                        <tr>
+                          <td>Teilprocess 3</td>
+                          <td>Löten</td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+        </aside>
+        <aside id="sidebar-down">
+            <nav>
+                <div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-hour-tab" data-bs-toggle="tab" data-bs-target="#nav-hour" type="button" role="tab" aria-controls="nav-hour" aria-selected="true">Hours</button>
+                    <button class="nav-link" id="nav-day-tab" data-bs-toggle="tab" data-bs-target="#nav-day" type="button" role="tab" aria-controls="nav-day" aria-selected="false">Days</button>
+                    <button class="nav-link" id="nav-week-tab" data-bs-toggle="tab" data-bs-target="#nav-week" type="button" role="tab" aria-controls="nav-week" aria-selected="false">Weeks</button>
+                    <button class="nav-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">Months</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-hour" role="tabpanel" aria-labelledby="nav-hour-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-day" role="tabpanel" aria-labelledby="nav-day-tab" tabindex="1">...</div>
+                <div class="tab-pane fade" id="nav-week" role="tabpanel" aria-labelledby="nav-week-tab" tabindex="2">...</div>
+                <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab" tabindex="3">
+                    <img src="../pictures/Zeitstrahl.png " alt="Fehler beim Laden der Datei" >
+                </div>
+              </div>
+        </aside>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="../../model/menü_meta.js"></script>
+    <script src="../../model/menü.js"></script>
+</body>
+</html>
