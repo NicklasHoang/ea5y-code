@@ -1,0 +1,56 @@
+/*****************************
+****** Sidebar Right    ******
+*****************************/
+#sidebar-right-meta {
+    border-color: black;
+    border: solid;
+
+    grid-column:  48;
+    grid-row:  1;
+
+    min-width: 50vw;
+    min-height: 100vh;
+
+    transform: translateX(70vw);
+    transition: all 0.35s ease-in-out;
+
+    box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+    z-index: 1111;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5px;
+}
+
+#sidebar-right-meta.collapsed {
+    transform: translateX(0%);
+}
+
+#sidebar-down.collapsed-right-meta{
+    padding-left: 50vw;
+    
+}
+
+#btn-down.collapsed {
+    transform: translateX(-15vw);
+}
+#card-div {
+    width: 100%;
+    height: 40%;
+    margin-top: 5%;
+    
+    border: 2px solid rgba(0, 0, 0, 0);
+    overflow-y: scroll;
+} 
+
+#searchbar {
+    width: 90%;
+    margin: 10px;
+}
+
+th {
+    width: 50%;
+}

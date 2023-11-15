@@ -19,12 +19,19 @@ right_side_click = false;
 right_side_out = false;
 cooldown_right = false;
 
-toggler = document.getElementById("btn-right");
-toggler.addEventListener('click', toggleRechteSeite);
-toggler.addEventListener('mouseover', toggleRechteSeite);
 
-toggler = document.getElementById("sidebar-right");
-toggler.addEventListener("mouseleave",toggleRechteSeite);
+try {
+    toggler = document.getElementById("btn-right");
+    toggler.addEventListener('click', toggleRechteSeite);
+    toggler.addEventListener('mouseover', toggleRechteSeite);
+
+    toggler = document.getElementById("sidebar-right");
+    toggler.addEventListener("mouseleave",toggleRechteSeite);
+  }
+  catch(err) {
+    console.log("No 'Sidebar-right' Found")
+  }
+
 
 toggler = document.getElementById("btn-div-right");
 toggler.addEventListener('mouseover', toggleRechteSeite);
@@ -99,6 +106,7 @@ function toggleRechteSeite(Event){
 }
 
 function toggleUntereSeite(Event){
+    console.log(Event.type);
     if(Event.type === "click"){
         if(!down_side_click && !down_side_out){
             down_side_out = !down_side_out;
