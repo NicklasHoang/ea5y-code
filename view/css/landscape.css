@@ -1,3 +1,4 @@
+
 /****************************
 ****** Zoom in and out ******
 ****************************/
@@ -11,35 +12,41 @@
 }
 
 #btn-zoom-out {
-    grid-column: 51;
+    grid-column: 53;
     grid-row: 1;
 
     background-color: grey;
     z-index: 1;
 }
-/****************************
-****** Bild div        ******
-****************************/
-#Bild{
-    position: relative;
-    min-width: 100vw;
-    min-height: 100vh;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    cursor: grab; 
 
+#btn-center {
+    grid-column: 51;
+    grid-row: 1;
+
+    background-color: grey;
 }
-#zoomedImage {
-    position: absolute;
+/****************************
+****** divs für forms  ******
+****************************/
+#five-pills-add, #five-pills-delete, #five-pills-edit{
+    border: 1px solid gray;
+    border-radius: 10px;
 
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease; /* Animierter Übergang für den Zoom-Effekt */
-    z-index: -1;
-
-    overflow: hidden;
+    margin-top: 10%;
 }
 
+#form-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5px;
+}
+
 /****************************
-****** Canvas und Drawings***
+****** divs für forms  ******
 ****************************/
+
+#in-id, #in-process-group, #in-preceding-id, #in-following-id {
+    margin-top: 5%;
+} 
