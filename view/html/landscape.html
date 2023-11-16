@@ -204,45 +204,80 @@
             <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-watch" aria-labelledby="v-pills-watch-tab" role="tabpanel" tabindex="0">
                     <h3>Tools:</h3>
-                    <button class="btn" id="tool-btn">Some Tools</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
+                    <a class="nav-link" id="r-watch-tool-tab" data-bs-toggle="pill" data-bs-target="#a" type="button" role="tab" aria-controls="a" aria-selected="true">Some Tool</a>
+                    <a class="nav-link" id="r-watch-tool-tab" data-bs-toggle="pill" data-bs-target="#a" type="button" role="tab" aria-controls="a" aria-selected="false">Some Tool</a>
+                    <a class="nav-link" id="r-watch-tool-tab" data-bs-toggle="pill" data-bs-target="#a" type="button" role="tab" aria-controls="a" aria-selected="false">Some Tool</a>
+                
+                    <div class="tab-content" id="five-edit-edit-tabContent">
+
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="v-pills-app" role="tabpanel" aria-labelledby="v-pills-app-tab" tabindex="1">
                     <h3>Approver-Tools:</h3>
-                    <button class="btn" id="tool-btn">Some Tools</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
+                    <a class="nav-link" id="r-app-tool-tab" data-bs-toggle="pill" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="true">Some Tool</a>
+                    <a class="nav-link" id="r-app-tool-tab" data-bs-toggle="pill" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="false">Some Tool</a>
+                    <a class="nav-link" id="r-app-tool-tab" data-bs-toggle="pill" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="false">Some Tool</a>
+                
+                    <div class="tab-content" id="five-edit-edit-tabContent">
+
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="v-pills-sim" role="tabpanel" aria-labelledby="v-pills-sim-tab" tabindex="2">
                     <h3>Sim-Tools:</h3>
-                    <button class="btn" id="tool-btn">Some Tools</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
+                    <a class="nav-link" id="r-sim-tool-tab" data-bs-toggle="pill" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="false">Some Tool</a>
+                    <a class="nav-link" id="r-sim-tool-tab" data-bs-toggle="pill" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="false">Some Tool</a>
+                    <a class="nav-link" id="r-sim-tool-tab" data-bs-toggle="pill" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="false">Some Tool</a>
+                
+                    <div class="tab-content" id="r-sim-tabContent">
+                        
+
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="v-pills-edit" role="tabpanel" aria-labelledby="v-pills-edit-tab" tabindex="3">
                     <h3>Edit-Tools:</h3>
-                    <button class="btn" id="tool-btn">Delete Point</button>
-                    <button class="btn" id="tool-btn">Edit Point</button>
-                    <button class="btn" id="tool-btn">Create new Point</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
-                    <button class="btn" id="tool-btn">Beispiel</button>
+                    <div class="nav flex-column nav-pills me-3" id="nav-edit-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link" id="r-edit-delete-tab" data-bs-toggle="pill" data-bs-target="#r-edit-delete" type="button" role="tab" aria-controls="r-edit-delete" aria-selected="false">Delete Point</a>
+                        <a class="nav-link" id="r-edit-edit-tab" data-bs-toggle="pill" data-bs-target="#r-edit-edit" type="button" role="tab" aria-controls="r-edit-edit" aria-selected="false">Edit Point</a>
+                        <a class="nav-link" id="r-edit-add-tab" data-bs-toggle="pill" data-bs-target="#r-edit-add" type="button" role="tab" aria-controls="r-edit-add" aria-selected="false">Create new Point</a>
+                    </div>                     
+                    <div class="tab-content" id="five-edit-edit-tabContent">
+                        <div class="tab-pane fade" id="r-edit-edit" aria-labelledby="r-edit-tab" role="tabpanel" tabindex="1">
+                            <h3>Edit</h3>
+                            <form id="form-add">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="in-process" placeholder="Process">
+                                    <input type="text" class="form-control" id="in-id" placeholder="ID">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Open Editor</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="r-edit-add" aria-labelledby="r-edit-add-tab" role="tabpanel" tabindex="2">
+                            <h3>Create:</h3>
+                            <form id="form-add">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="in-process" placeholder="Process">
+                                    <input type="text" class="form-control" id="in-id" placeholder="ID">
+                                    <input type="text" class="form-control" id="in-process-group" placeholder="Process group">
+                                    <input type="text" class="form-control" id="in-preceding-id" placeholder="Preceding ID">
+                                    <input type="text" class="form-control" id="in-following-id" placeholder="Following ID">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Add Prozess</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="r-edit-delete" aria-labelledby="r-edit-delete-tab" role="tabpanel" tabindex="3">
+                            <h3>Delete Items</h3>
+                            <form id="form-add">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="in-process" placeholder="Process">
+                                    <input type="text" class="form-control" id="in-id" placeholder="ID">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Confirm</button>
+                            </form>
+                        </div>
+                    </div>        
                 </div>
             </div>
+            
         </aside>
         <aside id="sidebar-down">
             <nav>
@@ -262,7 +297,9 @@
                 </div>
               </div>
         </aside>
+        
         <button class="btn" id="btn-zoom-in">+</button>
+        <button class="btn" id="btn-center">c</button>
         <button class="btn" id="btn-zoom-out">-</button>
     </div>
 
