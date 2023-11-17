@@ -1,8 +1,9 @@
 {
     "recommendations": [
         "kisstkondoros.vscode-codemetrics",
+        "shevtsov.vscode-cy-helper",
+        "g-fidalgo.cypress-runner",
         "dbaeumer.vscode-eslint",
-        // "ms-ceintl.vscode-language-pack-de",
         "donjayamanne.githistory",
         "felipecaputo.git-project-manager",
         "balazs4.gitlab-pipeline-monitor",
@@ -13,7 +14,6 @@
         "visualstudioexptteam.vscodei",
         "xabikos.javascriptsnippets",
         "yandeu.five-server",
-        "hbenl.vscode-mocha-test-adapter",
         "adamcowley.neo4j-vscode",
         "christian-kohler.npm-intellisense",
         "christian-kohler.path-intellisense",

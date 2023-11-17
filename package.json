@@ -1,21 +1,31 @@
 {
+    "name": "ea5y-code",
+    "version": "1.0.0",
+    "description": "Nach jedem klonen: - 'npm install' im Terminal ausführen",
+    "main": "index.js",
+    "scripts": {
+        "test": "cypress open",
+        "test:headless": "cypress run",
+        "test:chrome": "cypress run --headed --browser chrome"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/ea5y/ea5y-code.git"
+    },
+    "author": "Nico",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/ea5y/ea5y-code/issues"
+    },
+    "homepage": "https://gitlab.com/ea5y/ea5y-code#readme",
     "devDependencies": {
+        "cypress": "13.5.1",
+        "cypress-real-events": "1.11.0",
         "eslint": "8.53.0",
-        "mocha": "10.2.0",
-        "prettier": "3.1.0",
-        "puppeteer": "21.5.1"
+        "eslint-plugin-cypress": "2.15.1",
+        "prettier": "3.1.0"
     },
     "dependencies": {
         "bootstrap": "5.3.2"
-    },
-    "mochaExplorer": {
-        "files": "tests/**/*.js",
-        "cwd": ".",
-        "env": {
-            "NODE_ENV": "test"
-        }
-    },
-    "scripts": {
-        "test": "mocha tests/"
     }
 }

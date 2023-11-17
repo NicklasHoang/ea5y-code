@@ -13,4 +13,3 @@ unit-test-job:
     - npm list
     - node -v
     - chromium-browser --version
-    - npm test

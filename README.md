@@ -7,7 +7,6 @@ Beim ersten mal klonen:
 
 Nach jedem klonen:
 - "npm install" im Terminal ausführen
-- "npm fund" im Terminal ausführen
 
 ## Getting started
 
